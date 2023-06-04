@@ -1,0 +1,328 @@
+
+    /* ..........animation-start.................. */
+    @keyframes fadeInUp {
+      from {
+        transform: translate3d(0, 40px, 0)
+      }
+
+      to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+      }
+    }
+
+    @-webkit-keyframes fadeInUp {
+      from {
+        transform: translate3d(0, 40px, 0)
+      }
+
+      to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+      }
+    }
+
+    .animated {
+      animation-duration: 1s;
+      animation-fill-mode: both;
+      -webkit-animation-duration: 1s;
+      -webkit-animation-fill-mode: both
+    }
+
+    .animatedFadeInUp {
+      opacity: 0
+    }
+
+    .fadeInUp {
+      opacity: 0;
+      animation-name: fadeInUp;
+      -webkit-animation-name: fadeInUp;
+    }
+
+    /* ..........animation-end.................. */
+
+    /* .. Custom-font-start... */
+    @font-face {
+      font-family: don;
+      src: url(../Stuff/Font/Aero.ttf);
+    }
+
+    @font-face {
+      font-family: 'hard';
+      font-style: normal;
+      font-weight: normal;
+      src: local('hard'), url('../Stuff/font/hard/HardRace-lg4ee.woff') format('woff');
+    }
+
+    @font-face {
+      font-family: heart;
+      src: url(../Stuff/Font/The\ Heart\ Maze\ Demo.ttf);
+    }
+
+    @font-face {
+      font-family: rock;
+      src: url(../Stuff/Font/Rockybilly.ttf);
+    }
+
+    @font-face {
+      font-family: regu;
+      src: url(../Stuff/Font/AntranceRegular-x3WlR.ttf);
+    }
+
+    @font-face {
+      font-family: david;
+      src: url(../Stuff/Font/davidson/FinnleyDavidson-9Yndn.woff);
+    }
+
+
+    @font-face {
+      font-family: 'lit';
+      src: url('../Stuff/font/LTBinaryNeue.woff') format('woff');
+    }
+
+    @font-face {
+      font-family: 'lord';
+      src: url('../Stuff/font/Lord\ Darkar.ttf') format('ttf');
+    }
+
+
+    /* .. Custom-font-End... */
+
+    /* .. font-Class-start... */
+
+    .ft {
+      font-family: hard;
+    }
+
+    .ft-hard {
+      font-family: hard;
+    }
+
+    .ft-heart {
+      font-family: heart;
+    }
+
+    .ft-regu {
+      font-family: regu;
+    }
+
+    .ft-david {
+      font-family: david;
+    }
+
+    .ft-lit {
+      font-family: lit;
+    }
+
+    .ft-lord {
+      font-family: lord;
+    }
+
+
+    .ft-n {
+      font-family: don;
+      font-size: xx-large;
+      background: linear-gradient(to right, hsl(0, 0%, 30%) 0, hsl(0, 0%, 100%) 10%, hsl(0, 0%, 30%) 20%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: shine 8s infinite linear;
+
+    }
+
+    .ft-l {
+      font-family: hard;
+      font-size: xxl-large;
+      background: linear-gradient(to right, hsl(0, 0%, 30%) 0, hsl(0, 0%, 100%) 10%, hsl(0, 0%, 30%) 20%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: shine 8s infinite linear;
+    }
+
+    .ft-c {
+      font-family: regu;
+      background: linear-gradient(to right, hsl(0, 0%, 30%) 0, hsl(0, 0%, 100%) 10%, hsl(0, 0%, 30%) 20%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 80%;
+      animation: shine 5s infinite linear;
+    }
+ .ft-rega{
+    font-family: regu;
+    font-size: 70%;
+ }
+
+
+
+
+    /* .. font-Class-End... */
+
+
+    /* ..........basic-start.......................... */
+    #back {
+      background-image: url(../Stuff/new/bg1.jpg);
+      background-repeat: no-repeat;
+    }
+
+    .p1 {
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    }
+
+    body {
+      background-image: url(../Stuff/media/bg1.jpg);
+    }
+
+    #hi2 {
+      font-family: 'Unbounded', cursive;
+    }
+
+    .bor-r {
+      border-radius: 2%;
+    }
+
+
+    /* ..........basic-end.......................... */
+
+
+
+
+
+
+    /* ...shine effect.... */
+
+    .dis {
+      color: hsl(0, 0%, 28%);
+      font-size: 50px;
+      font-weight: bold;
+      font-family: don;
+      letter-spacing: 7px;
+      cursor: pointer;
+    }
+
+    .dis span {
+      transition: 0.5s ease-out;
+    }
+
+    .dis:hover span:nth-child(1) {
+      margin-right: 5px;
+    }
+
+    .dis:hover span:nth-child(1):after {
+      content: "'";
+    }
+
+    .dis:hover span:nth-child(2) {
+      margin-left: 30px;
+    }
+
+    .dis:hover span {
+      color: #fff;
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+    }
+
+    .mis:hover {
+      color: #fff;
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+
+    }
+
+    .mis {
+      color: #0a3160;
+
+      font-family: don;
+      transition: 0.5s ease-out;
+
+    }
+
+    .miss:hover {
+      color: #fff;
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+
+    }
+
+    .miss {
+      color: #0a3160;
+
+      font-family: regu;
+      transition: 0.5s ease-out;
+
+    }
+
+
+    .ftt:hover {
+      color: #fff;
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+
+    }
+
+    .ftt {
+      color: #0a3160;
+
+      font-family: hard;
+      transition: 0.5s ease-out;
+
+    }
+
+
+
+
+
+
+
+    .coll {
+      color: whitesmoke;
+    }
+
+
+
+    @keyframes shine {
+      0% {
+        background-position: 0;
+      }
+
+      60% {
+        background-position: 600px;
+      }
+
+      100% {
+        background-position: 600px;
+      }
+    }
+
+    .my {
+      display: inline-block;
+      margin: 0 0.5rem;
+
+      animation: fadeIn;
+      /* referring directly to the animation's @keyframe declaration */
+      animation-duration: 2s;
+      /* don't forget to set a duration! */
+    }
+
+    .animate__fadeInUp {
+      display: inline-block;
+      margin: 0 0.5rem;
+
+      animation: animate__fadeInUp;
+      /* referring directly to the animation's @keyframe declaration */
+      animation-duration: 1s;
+      /* don't forget to set a duration! */
+    }
+    .animate__zoomIn
+    {
+      display: inline-block;
+      margin: 0 0.5rem;
+
+      animation: animate__zoomIn;
+      /* referring directly to the animation's @keyframe declaration */
+      animation-duration: 1s;
+      /* don't forget to set a duration! */
+    }
+
+    html
+    {
+       scroll-behavior: smooth;
+    }
+
+    /* shine effect end */
+  

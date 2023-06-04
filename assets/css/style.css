@@ -1,0 +1,21 @@
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 2rem;
+    margin-top: 1rem;
+}
+.cards-single{
+    display: flex;
+    justify-content: space-between;
+    background: #a4aab1;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+.cards-single div:last-child span{
+    font-size: 3rem;
+    color: var(--main-color);
+}
+.cards-single div:first-child span{
+    color: var(--text-grey);
+
+}

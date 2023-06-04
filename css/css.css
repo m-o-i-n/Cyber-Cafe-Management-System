@@ -1,0 +1,245 @@
+
+@font-face {
+  font-family: don;
+  src: url(../../Stuff/Font/Aero.ttf);
+}
+.ft-aero {
+  font-family: don;
+}
+
+    /* .. Custom-font-start... */
+    @font-face {
+      font-family: don;
+      src: url(../../Stuff/Font/Aero.ttf);
+    }
+
+    @font-face {
+      font-family: 'hard';
+      font-style: normal;
+      font-weight: normal;
+      src: local('hard'), url('../../Stuff/font/hard/HardRace-lg4ee.woff') format('woff');
+    }
+
+    @font-face {
+      font-family: heart;
+      src: url(../../Stuff/Font/The\ Heart\ Maze\ Demo.ttf);
+    }
+
+    @font-face {
+      font-family: rock;
+      src: url(../../Stuff/Font/Rockybilly.ttf);
+    }
+
+    @font-face {
+      font-family: regu;
+      src: url(../../Stuff/Font/AntranceRegular-x3WlR.ttf);
+    }
+
+    @font-face {
+      font-family: david;
+      src: url(../../Stuff/Font/davidson/FinnleyDavidson-9Yndn.woff);
+    }
+
+
+    @font-face {
+      font-family: 'lit';
+      src: url('../../Stuff/font/LTBinaryNeue.woff') format('woff');
+    }
+
+    @font-face {
+      font-family: 'lord';
+      src: url('../../Stuff/font/Lord\ Darkar.ttf') format('ttf');
+    }
+
+
+    /* .. Custom-font-End... */
+
+    /* .. font-Class-start... */
+
+    .ft {
+      font-family: hard;
+    }
+
+    .ft-hard {
+      font-family: hard;
+    }
+
+    .ft-heart {
+      font-family: heart;
+    }
+
+    .ft-regu {
+      font-family: regu;
+    }
+
+    .ft-david {
+      font-family: david;
+    }
+
+    .ft-lit {
+      font-family: lit;
+    }
+
+    .ft-lord {
+      font-family: lord;
+    }
+
+
+    .ft-n {
+      font-family: don;
+      font-size: xx-large;
+      background: linear-gradient(to right, hsl(0, 0%, 30%) 0, hsl(0, 0%, 100%) 10%, hsl(0, 0%, 30%) 20%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: shine 8s infinite linear;
+
+    }
+
+    .ft-l {
+      font-family: hard;
+      font-size: xxl-large;
+      background: linear-gradient(to right, hsl(0, 0%, 30%) 0, hsl(0, 0%, 100%) 10%, hsl(0, 0%, 30%) 20%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: shine 8s infinite linear;
+    }
+
+    .ft-c {
+      font-family: regu;
+      background: linear-gradient(to right, hsl(0, 0%, 30%) 0, hsl(0, 0%, 100%) 10%, hsl(0, 0%, 30%) 20%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 80%;
+      animation: shine 5s infinite linear;
+    }
+ .ft-rega{
+    font-family: regu;
+    font-size: 70%;
+ }
+
+
+
+
+    /* .. font-Class-End... */
+
+
+    /* ..........basic-start.......................... */
+
+
+    .bor-r {
+      border-radius: 2%;
+    }
+
+
+    /* ..........basic-end.......................... */
+
+
+
+
+
+
+    /* ...shine effect.... */
+
+    .dis {
+      color: hsl(0, 0%, 28%);
+      font-size: 50px;
+      font-weight: bold;
+      font-family: don;
+      letter-spacing: 7px;
+      cursor: pointer;
+    }
+
+    .dis span {
+      transition: 0.5s ease-out;
+    }
+
+    .dis:hover span:nth-child(1) {
+      margin-right: 5px;
+    }
+
+    .dis:hover span:nth-child(1):after {
+      content: "'";
+    }
+
+    .dis:hover span:nth-child(2) {
+      margin-left: 30px;
+    }
+
+    .dis:hover span {
+      color: #fff;
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+    }
+
+    
+
+    .mis {
+      color: #0a3160;
+
+      font-family: don;
+      transition: 0.5s ease-out;
+
+    }
+
+    .mis:hover {
+      color: #070606;
+      text-shadow: 0 0 10px #0c0b0b, 0 0 20px #1d1a1a, 0 0 40px #1d1a1a;
+
+    }
+
+
+    
+   .mi {
+      color: #0a3160;
+
+      font-family: hard;
+      transition: 0.5s ease-out;
+
+    }
+
+    .mi:hover {
+      color: #fff;
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+
+    }
+
+    .ftt:hover {
+      color: #fff;
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+
+    }
+
+    .ftt {
+      color: #0a3160;
+
+      font-family: hard;
+      transition: 0.5s ease-out;
+
+    }
+
+    .coll {
+      color: whitesmoke;
+    }
+
+
+
+    @keyframes shine {
+      0% {
+        background-position: 0;
+      }
+
+      60% {
+        background-position: 600px;
+      }
+
+      100% {
+        background-position: 600px;
+      }
+    }
+
+    html
+    {
+       scroll-behavior: smooth;
+    }
+
+    /* shine effect end */
+  
